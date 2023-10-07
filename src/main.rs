@@ -10,6 +10,7 @@
 use std::thread::sleep;
 use std::time::Duration;
 mod cglib;
+mod cgstring;
 //import cglib
 //use cglib;
 
@@ -41,7 +42,10 @@ fn main() {
         Some(x) => println!("Result: {}", x),
         None => println!("Error: grade is more than 10"),
     }
-
+    //reverse string
+    
+let mut res =cgstring::reverse_string("hello");
+print!("reverse string: {}",res);
     sleep(Duration::from_secs(5));
 }
 
